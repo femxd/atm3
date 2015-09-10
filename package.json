@@ -1,6 +1,6 @@
 {
   "name": "fxd",
-  "version": "3.2.0",
+  "version": "3.2.2",
   "description": "fxd base fis3",
   "main": "index.js",
   "bin": {
@@ -24,7 +24,7 @@
     "fis-optimizer-png-compressor": "0.1.0",
     "fis-optimizer-uglify-js": "0.1.10",
     "fxd-spriter-csssprites": "0.0.1",
-    "fis3-command-init": "1.0.7",
+    "fxd-command-init": "*",
     "fis3-command-inspect": "1.0.3",
     "fis3-command-release": "1.2.7",
     "fis3-deploy-local-deliver": "1.0.0",
@@ -33,7 +33,8 @@
     "fis3-hook-components": "1.0.0",
     "fis3-packager-map": "1.0.7",
     "fis3-errors": "*",
-    "fis3-hook-relative":"*"
+    "fis3-hook-relative": "*",
+    "fis-parser-less": "*"
   },
   "devDependencies": {
     "chai": "^2.2.0",
