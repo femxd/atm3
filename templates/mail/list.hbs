@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>list--{{data.project_name}}</title>
+    <meta name="author" content="{{data.author}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"/>
+    <meta content="telephone=no" name="format-detection">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            position: absolute;
+            top: 0;
+            width: 960px;
+            left: 50%;
+            margin-left: -480px;
+        }
+
+        h1 {
+            margin: 20px 0;
+            font-size: 36px;
+            text-align: center;
+            font-weight: normal;
+        }
+
+        h2 {
+            font-size: 30px;
+            font-weight: bold;
+            margin: 10px;
+            color: #08c;
+        }
+
+        ul {
+            text-align: center;
+            list-style: none;
+        }
+
+        ul > li {
+            border: 1px dashed #666;
+            padding: 10px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        ul > li > div {
+            float: left;
+        }
+
+        em {
+            margin-left: 5px;
+            font-style: normal;
+            color: #F00;
+        }
+
+        .qrcode {
+            display: block;
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 150px;
+            height: 150px;;
+        }
+
+        .page-title {
+            font-size: 24px;
+            font-weight: bold;
+            width: 200px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<h1>{{data.project_name}}</h1>
+
+<h2>新增页面({{data.new_page.length}}个)</h2>
+<ul>
+    {{#each data.new_page}}
+        <li>
+            <div class="page-title"><a href="{{testUrl}}" target="_blank">{{title}}</a></div>
+            <div>
+                <a href="{{testUrl}}" class="qrcode"
+                   style="background-image: url(https://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=utf-8&chld=l|2&chl={{testUrl}});"></a>
+            </div>
+        </li>
+    {{/each}}
+</ul>
+
+<h2>以往页面({{data.old_page.length}}个)</h2>
+<ul>
+    {{#each data.old_page}}
+        <li>
+            <div class="page-title"><a href="{{testUrl}}" target="_blank">{{title}}</a></div>
+            <div>
+                <a href="{{testUrl}}" class="qrcode"
+                   style="background-image: url(https://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=utf-8&chld=l|2&chl={{testUrl}});"></a>
+            </div>
+        </li>
+    {{/each}}
+</ul>
+</body>
+</html>

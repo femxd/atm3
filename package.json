@@ -1,6 +1,6 @@
 {
   "name": "fxd",
-  "version": "3.2.3",
+  "version": "3.2.4",
   "description": "fxd base fis3",
   "main": "index.js",
   "bin": {
@@ -64,23 +64,16 @@
     "url": "git+https://github.com/femxd/fxd.git"
   },
   "keywords": [
-    "fis"
+    "fxd"
   ],
   "author": {
-    "name": "fis"
+    "name": "femxd"
   },
   "license": "BSD",
   "bugs": {
     "url": "https://github.com/femxd/fxd/issues"
   },
   "homepage": "https://github.com/femxd/fxd",
-  "gitHead": "09e890d5389138c3826a4f4e5446878663d0cae8",
-  "dist": {
-    "shasum": "dc44e894cd6442a03a9642324bd4579ca976de9b",
-    "size": 46480,
-    "noattachment": false,
-    "tarball": "http://registry.npm.taobao.org/fis3/download/fis3-3.2.0.tgz"
-  },
   "maintainers": [
     {
       "name": "2betop",
