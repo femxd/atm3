@@ -42,7 +42,7 @@ fis.match('**', {
   spriter: fis.plugin('csssprites', {
     htmlUseSprite: true,
     layout: 'matrix',
-    margin: '15',
+    margin: '16',
     scale: 0.5,
     styleReg: /(<style(?:(?=\s)[\s\S]*?["'\s\w\/\-]>|>))([\s\S]*?)(<\/style\s*>|$)/ig
   })
