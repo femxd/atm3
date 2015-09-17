@@ -1,6 +1,6 @@
 {
   "name": "atm3",
-  "version": "3.2.12",
+  "version": "3.2.13",
   "description": "atm3 base fis3",
   "main": "atm.js",
   "bin": {
@@ -33,9 +33,9 @@
     "fis3-errors": "*",
     "fis3-hook-relative": "*",
     "fis-parser-less": "*",
-    "atm3-command-init": "^0.0.3",
-    "atm3-spriter-csssprites": "^0.0.2",
-    "atm3-deploy-cdn": "^0.0.1"
+    "atm3-command-init": "*",
+    "atm3-spriter-csssprites": "*",
+    "atm3-deploy-cdn": "*"
   },
   "watch": {
     "jsdoc": "lib/*.js"
