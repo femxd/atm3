@@ -1,10 +1,10 @@
 {
-  "name": "fxd",
-  "version": "3.2.5",
-  "description": "fxd base fis3",
-  "main": "index.js",
+  "name": "atm3",
+  "version": "3.2.6",
+  "description": "atm3 base fis3",
+  "main": "atm.js",
   "bin": {
-    "fxd": "bin/fis.js"
+    "atm": "bin/fis.js"
   },
   "dependencies": {
     "colors": "0.6.2",
@@ -23,8 +23,8 @@
     "fis-optimizer-clean-css": "0.0.9",
     "fis-optimizer-png-compressor": "0.1.0",
     "fis-optimizer-uglify-js": "0.1.10",
-    "fxd-spriter-csssprites": "0.0.1",
-    "fxd-command-init": "*",
+    "atm-spriter-csssprites": "0.0.1",
+    "atm-command-init": "*",
     "fis3-command-inspect": "1.0.3",
     "fis3-command-release": "1.2.7",
     "fis3-deploy-local-deliver": "1.0.0",
@@ -34,7 +34,8 @@
     "fis3-packager-map": "1.0.7",
     "fis3-errors": "*",
     "fis3-hook-relative": "*",
-    "fis-parser-less": "*"
+    "fis-parser-less": "*",
+    "atm-postpackager-cdn":"*"
   },
   "devDependencies": {
     "chai": "^2.2.0",
@@ -61,19 +62,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/femxd/fxd.git"
+    "url": "git+https://github.com/femxd/atm.git"
   },
   "keywords": [
-    "fxd"
+    "atm",
+    "MXD",
+    "FIS"
   ],
   "author": {
     "name": "femxd"
   },
   "license": "BSD",
   "bugs": {
-    "url": "https://github.com/femxd/fxd/issues"
+    "url": "https://github.com/femxd/atm3/issues"
   },
-  "homepage": "https://github.com/femxd/fxd",
+  "homepage": "https://github.com/femxd/atm3",
   "maintainers": [
     {
       "name": "2betop",

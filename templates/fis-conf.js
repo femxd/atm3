@@ -1,38 +1,57 @@
-var enableConf = {
+fis.set("atm", {
   useSprite: true,
   useOptimize: false,
+  useHash: false,
   userName: 'allanyu',
-  projectName: 'demo'
-};
+  projectName: '150911_brower_landing',
+  cdnPath: ''
+});
 
 fis.set('project.files', ['**', '.**', '.**/**'])
-  .set('project.ignore', ['node_modules/**', '.gitignore', '**/_*.scss', '.docs/**', 'publish/**', '.dist/**', '.git/**', '.svn/**', 'fis-conf.js']);
+  .set('project.ignore', ['node_modules/**', '.idea', '.gitignore', '**/_*.scss', '.docs/**', 'publish/**', '.dist/**', '.git/**', '.svn/**', 'fis-conf.js']);
 
 fis.hook('relative');
 
+if (!!fis.get("atm").cdnPath) {
+  fis.get("atm").useDomain = !!fis.get("atm").cdnPath;
+  fis.get("atm").domain = "http://3gimg.qq.com/mig-web/" + fis.get("atm").cdnPath;
+}
+
+var atmConf = fis.get("atm");
+
 /*************************目录规范*****************************/
 fis.match('*', {
-  useHash: false,
   relative: true,
+  useHash: false,
+  useDomain: false,
+  domain: atmConf.domain,
   _isResourceMap: false
 }).match(/.*\.(html|htm|php)$/, { //页面模板不用编译缓存
-  useCache: false
+  useCache: false,
 }).match("/css/**.{css,less,scss}", {
-  useSprite: enableConf.useSprite,
-  optimizer: enableConf.useOptimize && fis.plugin('clean-css')
+  useSprite: atmConf.useSprite,
+  useDomain: atmConf.useDomain,
+  useHash: atmConf.useHash,
+  optimizer: atmConf.useOptimize && fis.plugin('clean-css')
 }).match('/css/**.less', {
   rExt: '.css',
   parser: fis.plugin('less')
-//}).match('/css/**.scss', {
-//  rExt: '.css',
-//  parser: fis.plugin('scss')
 }).match('*.mixin.less', {//less的mixin文件无需发布
   release: false
 }).match("/design/**.psd", {
   release: false
-}).match("font/**", {}).match("img/**", {}).match('img/**.png', {
+}).match("font/**", {
+  useHash: atmConf.useHash,
+  useDomain: atmConf.useDomain
+}).match("img/**", {
+  useDomain: atmConf.useDomain,
+  useHash: atmConf.useHash
+}).match('img/**.png', {
   optimizer: fis.plugin('png-compressor')
-}).match('js/**', {}).match('mail/**', {}).match('slice/**', {});
+}).match('js/**', {
+  useDomain: atmConf.useDomain,
+  useHash: atmConf.useHash
+}).match('mail/**', {}).match('slice/**', {});
 
 fis.match('**', {
   deploy: fis.plugin('local-deliver', {
@@ -50,11 +69,21 @@ fis.match('**', {
 
 fis.media('test').match("/css/**.{css,less}", {
   useSprite: true,
-  optimizer: enableConf.useOptimize && fis.plugin('clean-css')
+  optimizer: atmConf.useOptimize && fis.plugin('clean-css')
 }).match('**', {
   deploy: fis.plugin('http-push', {
     receiver: 'http://ued.wsd.com/receiver/receiver2.php',
-    to: '/data/wapstatic/' + enableConf.userName + '/' + enableConf.projectName
+    to: '/data/wapstatic/' + atmConf.userName + '/' + atmConf.projectName
+  })
+});
+
+fis.media('cdn').match("/css/**.{css,less}", {
+  useSprite: true,
+  optimizer: atmConf.useOptimize && fis.plugin('clean-css')
+}).match('**', {
+  deploy: fis.plugin('cdn', {
+    remoteDir: atmConf.cdnPath,
+    uploadUrl: 'http://super.kf0309.3g.qq.com/qm/upload'
   })
 });
 

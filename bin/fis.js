@@ -4,9 +4,9 @@ var Liftoff = require('liftoff');
 var argv = require('minimist')(process.argv.slice(2));
 var path = require('path');
 var cli = new Liftoff({
-  name: 'fxd',
-  processTitle: 'fxd',
-  moduleName: 'fxd',
+  name: 'atm',
+  processTitle: 'atm',
+  moduleName: 'atm',
   configName: 'fis-conf',
 
   // only js supported!
@@ -29,5 +29,5 @@ cli.launch({
   fis.set('system.globalNPMFolder', path.dirname(__dirname));
   fis.cli.name = this.name;
   fis.cli.run(argv, env);
-  require('../fxd');
+  require('../atm');
 });
