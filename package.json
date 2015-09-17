@@ -35,7 +35,7 @@
     "fis3-errors": "*",
     "fis3-hook-relative": "*",
     "fis-parser-less": "*",
-    "atm3-postpackager-cdn":"*"
+    "atm3-deploy-cdn":"*"
   },
   "devDependencies": {
     "chai": "^2.2.0",
