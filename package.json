@@ -37,19 +37,6 @@
     "fis-parser-less": "*",
     "atm3-deploy-cdn":"*"
   },
-  "devDependencies": {
-    "chai": "^2.2.0",
-    "jsdoc": "^3.3.2",
-    "minami": "git://github.com/2betop/minami.git",
-    "mocha": "^2.2.1",
-    "mocha-junit-reporter": "^1.4.0",
-    "npm-watch": "0.0.0",
-    "istanbul": "~0.2.14",
-    "coveralls": "2.10.0",
-    "fis3-deploy-local-deliver": "1.0.0",
-    "fis3-postpackager-loader": "1.2.7",
-    "fis3-hook-cmd": "0.0.1"
-  },
   "watch": {
     "jsdoc": "lib/*.js"
   },

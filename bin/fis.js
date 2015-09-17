@@ -28,6 +28,6 @@ cli.launch({
   fis.set('system.localNPMFolder', path.join(env.cwd, 'node_modules/fis3'));
   fis.set('system.globalNPMFolder', path.dirname(__dirname));
   fis.cli.name = this.name;
+  fis.cli.info = fis.util.readJSON(path.join(__dirname, '../package.json'));
   fis.cli.run(argv, env);
-  require('../atm');
 });
