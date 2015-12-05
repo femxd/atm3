@@ -1,6 +1,6 @@
 {
   "name": "atm3",
-  "version": "3.3.0",
+  "version": "3.3.2",
   "description": "atm3 base fis3",
   "main": "atm.js",
   "bin": {
@@ -27,19 +27,18 @@
     "fis3-command-server": "0.0.7",
     "fis3-server-node": "0.0.5",
     "fis3-deploy-local-deliver": "1.0.0",
-    "fis3-deploy-http-push": "1.0.1",
     "fis3-deploy-encoding": "1.0.0",
     "fis3-hook-components": "1.0.1",
     "fis3-packager-map": "1.0.8",
     "fis3-errors": "*",
     "fis3-hook-relative": "*",
     "fis-parser-less": "*",
-    "fis-parser-node-sass": "0.1.4",
     "atm3-command-init": "*",
     "atm3-spriter-csssprites": "*",
     "atm3-deploy-cdn": "*",
     "fis3-postpackager-open": "*",
-    "atm3-postpackager-list-html": "*"
+    "atm3-postpackager-list-html": "*",
+    "atm3-deploy-http-push": "*"
   },
   "watch": {
     "jsdoc": "lib/*.js"
