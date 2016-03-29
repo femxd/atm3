@@ -1,6 +1,6 @@
 {
   "name": "atm3",
-  "version": "3.3.2",
+  "version": "3.3.21",
   "description": "atm3 base fis3",
   "main": "atm.js",
   "bin": {
@@ -17,19 +17,19 @@
     "minimist": "1.1.1",
     "resolve": "1.1.6",
     "tar": "0.1.17",
-    "fis-command-install": "0.2.3",
+    "fis-command-install": "0.2.15",
     "fis-lolcat": "1.0.1",
     "fis-optimizer-clean-css": "0.0.9",
-    "fis-optimizer-png-compressor": "0.1.2",
+    "fis-optimizer-png-compressor": "0.1.5",
     "fis-optimizer-uglify-js": "0.1.10",
     "fis3-command-inspect": "1.0.3",
     "fis3-command-release": "1.2.9",
-    "fis3-command-server": "0.0.7",
-    "fis3-server-node": "0.0.5",
+    "fis3-command-server": "0.0.8",
+    "fis3-server-node": "0.0.6",
     "fis3-deploy-local-deliver": "1.0.0",
     "fis3-deploy-encoding": "1.0.0",
-    "fis3-hook-components": "1.0.1",
-    "fis3-packager-map": "1.0.8",
+    "fis3-hook-components": "1.0.3",
+    "fis3-packager-map": "1.0.9",
     "fis3-errors": "*",
     "fis3-hook-relative": "*",
     "fis-parser-less": "*",
@@ -72,26 +72,5 @@
       "name": "googleyufei",
       "email": "googleyufei@qq.com"
     }
-  ],
-  "directories": {},
-  "gitHead": "f1d7ddb0a46db63baf1e4e60ae9a24a3dd901a19",
-  "_id": "atm3@3.2.16",
-  "_shasum": "9f62007c69077677a408c18cbb4b4836bdfa3b74",
-  "_from": "atm3@*",
-  "_npmVersion": "2.11.3",
-  "_nodeVersion": "0.12.7",
-  "_npmUser": {
-    "name": "googleyufei",
-    "email": "googleyufei@qq.com"
-  },
-  "dist": {
-    "shasum": "9f62007c69077677a408c18cbb4b4836bdfa3b74",
-    "size": 47404,
-    "noattachment": false,
-    "tarball": "http://registry.npm.taobao.org/atm3/download/atm3-3.2.16.tgz"
-  },
-  "publish_time": 1444803955182,
-  "_cnpm_publish_time": 1444803955182,
-  "_resolved": "http://registry.npm.taobao.org/atm3/download/atm3-3.2.16.tgz",
-  "readme": "ERROR: No README data found!"
+  ]
 }
