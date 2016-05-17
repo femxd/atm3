@@ -1,6 +1,6 @@
 {
   "name": "atm3",
-  "version": "3.3.21",
+  "version": "3.3.22",
   "description": "atm3 base fis3",
   "main": "atm.js",
   "bin": {
@@ -38,7 +38,7 @@
     "atm3-deploy-cdn": "*",
     "fis3-postpackager-open": "*",
     "atm3-postpackager-list-html": "*",
-    "atm3-deploy-http-push": "*"
+    "atm3-deploy-http-push": "1.0.3"
   },
   "watch": {
     "jsdoc": "lib/*.js"
