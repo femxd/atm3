@@ -1,17 +1,13 @@
-![](https://raw.githubusercontent.com/fex-team/fis3/master/doc/logo.png)
 
-# FIS3
-![](https://img.shields.io/npm/v/fis3.svg) ![](https://img.shields.io/npm/dm/fis3.svg)
-[![Build Status](https://travis-ci.org/fex-team/fis3.svg?branch=master)](https://travis-ci.org/fex-team/fis3)
-[![Coverage Status](https://coveralls.io/repos/fex-team/fis3/badge.svg?branch=master&service=github)](https://coveralls.io/github/fex-team/fis3?branch=master)
+# atm3
 
-FIS3 面向**前端**的**工程构建系统**。解决前端工程中性能优化、资源加载（异步、同步、按需、预加载、依赖管理、合并、内嵌）、模块化开发、自动化工具、开发规范、代码部署等问题。
+atm3 面向**前端**的**工程构建系统**。解决前端工程中性能优化、资源加载（异步、同步、按需、预加载、依赖管理、合并、内嵌）、模块化开发、自动化工具、开发规范、代码部署等问题。
 
 > 如果对FIS先有些了解，但理解不深的，可试着带着这句话去看文档 <br>
-> FIS3 会在配置文件中给文件添加相应属性，用于控制文件的编译、合并等各种操作；文件属性包括基本属性和插件属性，[详细请参考](https://github.com/fex-team/fis3/blob/master/doc/docs/api/config-props.md#文件属性)
+> atm3 会在配置文件中给文件添加相应属性，用于控制文件的编译、合并等各种操作；文件属性包括基本属性和插件属性，[详细请参考](https://github.com/femxd/atm3/blob/master/doc/docs/api/config-props.md#文件属性)
 
 ```
-npm install -g fis3
+npm install -g atm3
 ```
 
 ## 文档
@@ -23,15 +19,15 @@ npm install -g fis3
 ```
 mkdir my-proj
 cd my-proj
-fis3 init
-fis3 release
-fis3 server start --type node
+atm3 init
+atm3 release
+atm3 server start --type node
 ```
 
 *fis-conf.js 的例子*
 
 ```js
-// default settings. fis3 release
+// default settings. atm3 release
 
 // Global start
 fis.match('*.{js,css}', {
@@ -69,7 +65,7 @@ fis.media('production');
 
 ## 其他例子
 
-https://github.com/fex-team/fis3-demo
+https://github.com/femxd/atm3-demo
 
 ## 常用插件
 
